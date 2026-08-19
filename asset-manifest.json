@@ -1,15 +1,15 @@
 {
   "files": {
     "main.css": "/paginaPropia/static/css/main.1c083513.css",
-    "main.js": "/paginaPropia/static/js/main.5005384e.js",
+    "main.js": "/paginaPropia/static/js/main.bad2a1b9.js",
     "static/js/453.09ed972e.chunk.js": "/paginaPropia/static/js/453.09ed972e.chunk.js",
     "index.html": "/paginaPropia/index.html",
     "main.1c083513.css.map": "/paginaPropia/static/css/main.1c083513.css.map",
-    "main.5005384e.js.map": "/paginaPropia/static/js/main.5005384e.js.map",
+    "main.bad2a1b9.js.map": "/paginaPropia/static/js/main.bad2a1b9.js.map",
     "453.09ed972e.chunk.js.map": "/paginaPropia/static/js/453.09ed972e.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.1c083513.css",
-    "static/js/main.5005384e.js"
+    "static/js/main.bad2a1b9.js"
   ]
 }
