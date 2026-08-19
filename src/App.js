@@ -1,4 +1,4 @@
-import { BrowserRouter, Routes, Route } from 'react-router-dom'
+import { HashRouter, Routes, Route } from 'react-router-dom'
 import './AppPropia.css'
 import CustomProvider from './Provider'
 import Navdar from './MiPagina/Navdar'
@@ -28,13 +28,13 @@ function App() {
 
     <div className="App">
 
-      <BrowserRouter>
+      <HashRouter>
         <Navdar abrirContacto={abrirContacto} abrirReserva={abrirReserva} />
         <Routes>
           <Route path="/" element={<Main />} />
         </Routes>
         <Footer />
-      </BrowserRouter>
+      </HashRouter>
     </div>
   )
 }
@@ -60,7 +60,7 @@ export default NewApp
 
 
 
-// import { BrowserRouter, Routes, Route } from 'react-router-dom'
+// import { HashRouter, Routes, Route } from 'react-router-dom'
 // import './App.css'
 // import CustomProvider from './Provider'
 // import Navbar from './Component/Navbar'
@@ -97,7 +97,7 @@ export default NewApp
 
 //     <div className="App">
 
-//       <BrowserRouter>
+//       <HashRouter>
 //         <Navbar abrirContacto={abrirContacto} abrirReserva={abrirReserva} /> 
 //         <Routes>
 //            <Route path="/" element={<Main abrirContacto={abrirContacto} />} />
@@ -106,7 +106,7 @@ export default NewApp
 //          <Contact abierto={contactoAbierto} cerrar={cerrarContacto} />
 //         <Reserva abierto={reservaAbierta} cerrar={cerrarReserva} />
 //         <Footer /> 
-//       </BrowserRouter>
+//       </HashRouter>
 //     </div>
 //   )
 // }
