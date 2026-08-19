@@ -1,25 +1,133 @@
-import logo from './logo.svg';
-import './App.css';
+import { BrowserRouter, Routes, Route } from 'react-router-dom'
+import './AppPropia.css'
+import CustomProvider from './Provider'
+import Navdar from './MiPagina/Navdar'
+import Main from './MiPagina/Main'
+import { useState } from 'react'
+import Footer from './MiPagina/Footer'
+
 
 function App() {
+
+  const [contactoAbierto, setContactoAbierto] = useState(false)
+  const [reservaAbierta, setReservaAbierta] = useState(false)
+
+  const abrirContacto = () => {
+    setContactoAbierto(true)
+  }
+
+
+
+  const abrirReserva = () => {
+    setReservaAbierta(true)
+  }
+
+
+
   return (
+
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+
+      <BrowserRouter>
+        <Navdar abrirContacto={abrirContacto} abrirReserva={abrirReserva} />
+        <Routes>
+          <Route path="/" element={<Main />} />
+        </Routes>
+        <Footer />
+      </BrowserRouter>
     </div>
-  );
+  )
 }
 
-export default App;
+
+function NewApp() {
+
+  return (
+
+    <CustomProvider>
+
+      <App />
+
+    </CustomProvider>
+
+  )
+
+}
+
+
+export default NewApp
+
+
+
+
+// import { BrowserRouter, Routes, Route } from 'react-router-dom'
+// import './App.css'
+// import CustomProvider from './Provider'
+// import Navbar from './Component/Navbar'
+// import Main from './Component/Main'
+// import Gallery from './Component/Gallery'
+// import Contact from './Component/Contact'
+// import { useState } from 'react'
+// import Footer from './Component/Footer'
+// import Reserva from './Component/Reserva'
+
+
+// function App() {
+
+//   const [contactoAbierto, setContactoAbierto] = useState(false)
+//   const [reservaAbierta, setReservaAbierta] = useState(false)
+
+//   const abrirContacto = () => {
+//     setContactoAbierto(true)
+//   }
+//   const cerrarContacto = () => {
+//     setContactoAbierto(false)
+//   }
+
+
+//   const abrirReserva = () => {
+//     setReservaAbierta(true)
+//   }
+
+//   const cerrarReserva = () => {
+//     setReservaAbierta(false)
+//   }
+
+//   return (
+
+//     <div className="App">
+
+//       <BrowserRouter>
+//         <Navbar abrirContacto={abrirContacto} abrirReserva={abrirReserva} /> 
+//         <Routes>
+//            <Route path="/" element={<Main abrirContacto={abrirContacto} />} />
+//           <Route path="/galeria" element={<Gallery />} /> 
+//         </Routes>
+//          <Contact abierto={contactoAbierto} cerrar={cerrarContacto} />
+//         <Reserva abierto={reservaAbierta} cerrar={cerrarReserva} />
+//         <Footer /> 
+//       </BrowserRouter>
+//     </div>
+//   )
+// }
+
+
+// function NewApp() {
+
+//   return (
+
+//     <CustomProvider>
+
+//       <App />
+
+//     </CustomProvider>
+
+//   )
+
+// }
+
+
+// export default NewApp
+
+
+
