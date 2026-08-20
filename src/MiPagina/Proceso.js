@@ -5,7 +5,7 @@ const pasos = [
     numero: '01',
     titulo: 'HABLAMOS',
     descripcion:
-      'Me contás qué necesitás, qué objetivo tiene tu proyecto y qué querés conseguir con tu sitio web.'
+      'Nos contás qué necesitás, qué objetivo tiene tu proyecto y qué querés conseguir con tu sitio web.'
   },
   {
     numero: '02',
@@ -17,7 +17,7 @@ const pasos = [
     numero: '03',
     titulo: 'DESARROLLAMOS',
     descripcion:
-      'Construyo tu sitio y voy trabajando cada parte para que el resultado sea rápido, moderno y responsive.'
+      'Construimos tu sitio y  trabajamos cada parte para que el resultado sea rápido, moderno y responsive.'
   },
   {
     numero: '04',

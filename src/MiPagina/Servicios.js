@@ -14,7 +14,7 @@ const Servicios = () => {
           </div>
 
           <h2 className="servicios__title">
-            ¿Qué puedo hacer
+            ¿Qué podemos hacer
             <span>por vos?</span>
           </h2>
 

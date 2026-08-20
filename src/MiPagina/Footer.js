@@ -125,21 +125,12 @@ const Footer = () => {
 
             <div className="footer__logo">
 
-              <span className="footer__logo-mark">
-                A
-              </span>
-
-              <span className="footer__logo-name">
-                ANDRÉS
-              </span>
+              <img className="floating-Footer" g src={`../../img/logo.png`} alt='' />
 
             </div>
 
 
-            <p>
-              Desarrollo web enfocado en crear experiencias
-              digitales modernas, rápidas y funcionales.
-            </p>
+        
 
 
             <div className="footer__status">
@@ -264,7 +255,10 @@ const Footer = () => {
 
         </div>
 
-
+            <p className='floating-Footer'>
+              Desarrollo web enfocado en crear experiencias
+              digitales modernas, rápidas y funcionales.
+            </p>
 
         {/* =========================================
             TECH STACK

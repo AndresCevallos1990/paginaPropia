@@ -124,7 +124,7 @@ const Hero = () => {
                     </p>
 
                     <p className="hero__description">
-                        Desarrollo experiencias digitales
+                        Desarrollamos experiencias digitales
                         con identidad propia.
                     </p>
                     <p className="hero__description">

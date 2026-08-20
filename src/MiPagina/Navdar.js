@@ -33,9 +33,7 @@ const Navbar = ({ abrirContacto }) => {
                         <span className="floating-navbar__symbol">
                             +
                         </span>
-                        <span className="floating-navbar__name">
-                            ANDRÉS
-                        </span>
+                        <img className="floating-navbar__name" g src={`../../img/loguito.png`} alt='' />
                     </a>
                     <span className="floating-navbar__separator"></span>
                     <nav className="floating-navbar__links">
